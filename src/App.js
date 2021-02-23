@@ -32,7 +32,7 @@ class App extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     let newUser = {
-      name: this.state.name,
+      username: this.state.name,
       email: this.state.email,
       phonenumber: this.state.phonenumber,
       password: this.state.password,
