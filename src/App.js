@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      username: "",
       email: "",
       phonenumber: "",
       password: "",
@@ -32,7 +32,7 @@ class App extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     let newUser = {
-      username: this.state.name,
+      username: this.state.username,
       email: this.state.email,
       phonenumber: this.state.phonenumber,
       password: this.state.password,
