@@ -1,4 +1,4 @@
-++import React from "react";
+import React from "react";
 import "./App.css";
 import UserItem from "./Component/UserItem";
 
@@ -40,7 +40,7 @@ class App extends React.Component {
     this.setState({ users: [...this.state.users, newUser] });
 
     this.setState({ username: "", email: "", phonenumber: "", password: "" });
-  };+
+  };
   render() {
     return (
       <div className="App">
