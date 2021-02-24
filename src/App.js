@@ -38,7 +38,7 @@ class App extends React.Component {
       password: this.state.password,
     };
     this.setState({ users: [...this.state.users, newUser] });
-    5;
+
     this.setState({ username: "", email: "", phonenumber: "", password: "" });
   };
   render() {
