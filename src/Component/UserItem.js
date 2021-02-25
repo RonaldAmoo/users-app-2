@@ -5,9 +5,9 @@ class UserItem extends React.Component {
     return (
       <div>
         <h1>{this.props.username}</h1>
-        <h3>{this.props.email}</h3>
-        <h3>{this.props.phonenumber}</h3>
-        <h3>{this.props.password}</h3>
+        <h2>{this.props.email}</h2>
+        <h4>{this.props.phonenumber}</h4>
+        <h6>{this.props.password}</h6>
       </div>
     );
   }

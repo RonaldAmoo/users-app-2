@@ -15,19 +15,15 @@ class App extends React.Component {
   }
   handleUsernameChange = (e) => {
     this.setState({ username: e.target.value });
-    console.log(this.state.username);
   };
   handleEmailChange = (e) => {
     this.setState({ email: e.target.value });
-    console.log(this.state.email);
   };
   handlePhonenumberChange = (e) => {
     this.setState({ phonenumber: e.target.value });
-    console.log(this.state.phonenumber);
   };
   handlePasswordChange = (e) => {
     this.setState({ password: e.target.value });
-    console.log(this.state.password);
   };
   handleSubmit = (e) => {
     e.preventDefault();
@@ -75,9 +71,10 @@ class App extends React.Component {
           </form>
         </div>
         <div>
-          {this.state.users.map((user) => (
+          {this.state.users.map((user, index) => (
             <UserItem
-              name={user.username}
+              key={index}
+              username={user.username}
               email={user.email}
               phonenumber={user.phonenumber}
               password={user.password}
